@@ -1,0 +1,257 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "electeur",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "choix",
+						"type": "uint256"
+					}
+				],
+				"name": "Vote",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "admin",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "electeur",
+						"type": "address"
+					}
+				],
+				"name": "permis",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "admin",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "nom",
+						"type": "string"
+					}
+				],
+				"name": "save",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "NBvote",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "candidats",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "idcandidat",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "nom",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nbrVoix",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newEnddate",
+						"type": "uint256"
+					}
+				],
+				"name": "changeEnddate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "electeurs",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "permit",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "djaVote",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "choix",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getEnddate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_electeur",
+						"type": "address"
+					}
+				],
+				"name": "permission",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nom",
+						"type": "string"
+					}
+				],
+				"name": "savcandidat",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_choix",
+						"type": "uint256"
+					}
+				],
+				"name": "voter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/election.sol": "Election"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/election.sol": {
+			"keccak256": "0x718e66d23713c4d8cb3c2d77f4358ceb3b0497daaed0c9d5a0b294384d6cad2e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://99495956a2228255492c63a3785e2430c2e41f42b42e4b2a1bc2ead97e498a3a",
+				"dweb:/ipfs/QmYhvJtxMnf6G2AKpEp3r7oHnzx3CM6Da4R8Bj4rudLQgK"
+			]
+		}
+	},
+	"version": 1
+}
